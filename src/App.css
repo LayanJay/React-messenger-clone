@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
+.container{
+    background-color: #eee;
+    min-height: 100vh;
+    position: relative;
+    width: device-width;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+    position: fixed;
+    left: 1rem;
+    right: 1rem;
+    background-color: #eeeeee;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid #303030;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header img{
+    margin-bottom: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header__logoName{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.header__greet{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.message{
+    display: flex;
+    align-items: center;
+}
+
+.message__grid{
+    padding-top: 17rem;
+    padding-bottom: 3rem;
+    z-index: 2;
+    overflow: auto;
+}
+
+.message__text{
+    background-color: #dddddd;
+    padding: 1rem;
+    border-radius: 5rem;
+    margin-bottom: 1rem;
+}
+
+.form{
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    bottom: 0.5rem;
+    z-index: 1;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
