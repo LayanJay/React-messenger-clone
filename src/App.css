@@ -1,65 +1,113 @@
 .container{
-    background-color: #eee;
-    min-height: 100vh;
     position: relative;
+    min-height: 100vh;
     width: device-width;
 }
 
-.header{
-    position: fixed;
-    left: 1rem;
-    right: 1rem;
-    background-color: #eeeeee;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    z-index: 1;
+/* homepage styles */
+.header__info{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.home{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    border-bottom: 2px solid #303030;
 }
 
-.header img{
-    margin-bottom: 1rem;
+.home img{
+    margin-bottom: 2rem;
 }
 
-.header__logoName{
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
+.header__logo-name{
+    font-weight: 500;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 .header__greet{
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
 }
 
-.message{
+.form__chat{
+    width: 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
+/* homepage styles end */
+
+/* chat */
+.form{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    padding: 0.5rem 1rem;
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* chat end */
+
+/* message */
 
 .message__grid{
-    padding-top: 17rem;
-    padding-bottom: 3rem;
+    position: relative;
+    top: 1rem;
+    bottom: 5rem;
+    left: 0;
+    right: 0;
     z-index: 2;
-    overflow: auto;
+    margin: 2rem 0 4rem 0;
+    padding: 2rem 0 4rem 0;
 }
 
-.message__text{
-    background-color: #dddddd;
-    padding: 1rem;
-    border-radius: 5rem;
-    margin-bottom: 1rem;
-}
-
-.form{
-    position: absolute;
-    left: 1rem;
-    right: 1rem;
-    bottom: 0.5rem;
-    z-index: 1;
-    background-color: #eee;
+.message__left{
+    width: 100%;
+    margin-bottom: 0.3rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
+
+.message__right{
+    width: 100%;
+    margin-bottom: 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.message__text-grey{
+    background-color: #eeeeee;
+    border-radius: 5rem;
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.message__text-blue{
+    background-color: #0082FF;
+    color: rgb(250, 250, 250);
+    border-radius: 5rem;
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.display-none{
+    display: none;
+}
+
+/* message end */
+
+
+
